@@ -1,0 +1,62 @@
+:root {
+    --darkSky: #6482AD;
+    --lightSky: #7FA1C3;
+    --darkPastel: #E2DAD6;
+    --lightPastel: #F5EDED;
+}
+
+body {
+    background-color: var(--darkSky);
+    margin: 0;
+}
+
+header {
+    background-color: var(--lightSky);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+header > h1 {
+    margin: 0 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: wrap;
+}
+
+.card {
+    background-color: var(--lightPastel);
+    border: solid var(--darkPastel) 1px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    height: 30vh;
+    width: 40vh;
+    margin-top: 5vh;
+}
+
+.card > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card > div > h3, .card > div > h4 {
+    height: 5vh;
+    margin: 1vh 0 1vh 0;
+}
+
+.card > input, .card > select {
+    margin: 1.5vh 0 0 0;
+    width: 39vh;
+}
+
+.card > button {
+    margin-top: 0.5vh;
+    color: var(--lightPastel);
+    background-color: #007BFF;
+    border: solid #3B71CA 1px;
+    border-radius: 2px;
+}

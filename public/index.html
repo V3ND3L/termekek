@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termékek</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Termékek</h1>
+    </header>
+        <main id="cards">
+            <div class="row" id="row">
+                <div class="card">
+                    <div><h3>Megnevezés:</h3><h4>Alma</h4></div>
+                    <div><h3>Egységár:</h3><h4>100</h4></div>
+                    <div><h3>Mennyiségi egység:</h3><h4>db</h4></div>
+                    <div><h3>Mennyiség:</h3><h4>1</h4></div>
+                </div>
+                <form class="card" action="http://localhost:3000/" method="post" enctype="application/x-www-form-urlencoded">
+                    <input type="text" placeholder="Megnevezés" name="megnevezes" id="megnevezes">
+                    <input type="number" placeholder="Egységár" name="egysegar" id="egysegar">
+                    <select name="mennyisegiEgyseg" id="mennyisegiEgyseg">
+                        <option value="db">db</option>
+                        <option value="kg">kg</option>
+                    </select>
+                    <input type="number" placeholder="Mennyiség" name="mennyiseg" id="mennyiseg">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
